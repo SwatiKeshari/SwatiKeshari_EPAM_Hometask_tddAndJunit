@@ -9,36 +9,31 @@ class Delete2charsTest {
 	@Test
 	void test1() {
 		Delete2chars delete2chars = new Delete2chars();
-		String actual = delete2chars.del("ABCD");
-		assertEquals("BCD",actual);
+		assertEquals("BCD",delete2chars.del("ABCD"));
 	}
 
 	@Test
 	void test2() {
 		Delete2chars delete2chars = new Delete2chars();
-		String actual = delete2chars.del("AACD");
-		assertEquals("CD",actual);
+		assertEquals("CD",delete2chars.del("AACD"));
 	}
 	
 	@Test
 	void test3() {
 		Delete2chars delete2chars = new Delete2chars();
-		String actual = delete2chars.del("BBAA");
-		assertEquals("BBAA",actual);
+		assertEquals("BBAA",delete2chars.del("BBAA"));
 	}
 	
 	@Test
 	void test4() {
 		Delete2chars delete2chars = new Delete2chars();
-		String actual = delete2chars.del("ABCD");
-		assertEquals("BCD",actual);
+		assertEquals("BCD",delete2chars.del("ABCD"));
 	}
 	
 	@Test
 	void test5() {
 		Delete2chars delete2chars = new Delete2chars();
-		String actual = delete2chars.del("AABAA");
-		assertEquals("BAA",actual);
+		assertEquals("BAA",delete2chars.del("AABAA"));
 	}
 	
 	

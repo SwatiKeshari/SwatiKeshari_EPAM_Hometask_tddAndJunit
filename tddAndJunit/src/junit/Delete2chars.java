@@ -4,7 +4,6 @@ public class Delete2chars {
 	
 	public String del(String string) {
 		String result = string;
-		int stringlength = string.length();
 		if(string.charAt(0)=='A'&& string.charAt(1)=='A') {
 			String s = string.substring(2);
 			return s;
